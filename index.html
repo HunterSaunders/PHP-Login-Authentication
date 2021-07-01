@@ -4,8 +4,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.scss" >
 </head>
 <body>
-    <h2>This Is My LogIn Page</h2>
-</body>
+    <header>
+        <div class="logo-name">
+            <img src="./box_logo.png" alt="Logo" />
+            <h1 class="txt-i">STORE-IT</h1>
+        </div>
+        <div class="nav-section">
+            <h5>Don't Have An Account?</h5>
+            <button class="open-btn">
+                <h4 id="opent-btn-txt">SIGN UP</h4>
+            </button>
+        </div>
+    </header>
+    <main>
+        <h1 class="form-header txt-i">Login</h1>
+        <form>
+            <label>EMAIL ADDRESS</label>
+            <input name="email" type="email" autocomplete="off"/>
+            <label>PASSWORD</label>
+            <input name="password" type="password"/>
+            <button class="form-btn"><h3>LOGIN</h3></button>
+        </form>
+    </main>
+    <footer>
+        <h5>©Hunter Saunders</h5>
+        <ul>
+            <li><img src="instagram.png" alt="Instagram" class="icon"/></li>
+            <li><img src="facebook.png" alt="Facebook" class="icon"/></li>
+            <li><img src="twitter.png" alt="Twitter" class="icon"/></li>
+        </ul>
+    </footer>
 </html>
