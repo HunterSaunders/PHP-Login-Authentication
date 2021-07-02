@@ -7,6 +7,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
 h1,h2,h3,h4{
     letter-spacing: 3px;
 }
@@ -56,14 +60,26 @@ form input{
     background-color: transparent;
     outline: none;
 }
+::placeholder{
+    color: rgba(255,255,255,.2);
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: rgba(255,255,255,.2);
+}
+
+::-ms-input-placeholder {
+    color: rgba(255,255,255,.2);
+}
 ul{
     display: flex;
     flex-direction: row;
     list-style: none;
 }
-.open-btn{
+a.open-btn{
     background-color: transparent;
     color: #ffffff;
+    font-size: 14px;
     padding: 5px 20px;
     border: 2px solid #ffffff;
     border-radius: 3px;
@@ -95,6 +111,7 @@ ul{
 .icon{
     max-height: 15px;
     margin-left: .75rem;
+    cursor: pointer;
 }
 .txt-i{
     font-family: 'Ropa Sans', sans-serif;

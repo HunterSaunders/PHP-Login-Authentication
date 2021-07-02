@@ -3,31 +3,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="styles.scss" >
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.js"></script>
 </head>
 <body>
     <header>
         <div class="logo-name">
             <img src="./box_logo.png" alt="Logo" />
-            <h1 class="txt-i">STOR-IT</h1>
+            <h1 class="txt-i">STORE-IT</h1>
         </div>
         <div class="nav-section">
-            <h5>Don't Have An Account?</h5>
-            <a href="./signup.html" class="open-btn">
-                <h4 id="opent-btn-txt">SIGN UP</h4>
+            <h5>Already Have An Account?</h5>
+            <a href="./index.html" class="open-btn">
+                <h4 id="opent-btn-txt">LOGIN</h4>
             </a>
         </div>
     </header>
     <main>
-        <h1 class="form-header txt-i">Login</h1>
+        <h1 class="form-header txt-i">Sign Up</h1>
         <form>
+            <label>FIRST NAME</label>
+            <input id="name" name="first" type="text" autocomplete="off">
+            <label>LAST NAME</label>
+            <input name="last" type="text" autocomplete="off">
             <label>EMAIL ADDRESS</label>
-            <input name="email-login" type="email" autocomplete="off" placeholder="demo@email.com">
+            <input name="email" type="email" autocomplete="off">
             <label>PASSWORD</label>
-            <input name="password-login" type="password">
-            <button class="form-btn" type="button" onclick="validateUserLogin()"><h3>LOGIN</h3></button>
+            <input name="password" type="password" autocomplete="off">
+            <label>CONFIRM PASSWORD</label>
+            <input name="password" type="password" autocomplete="off">
+            <button id="signup-btn" class="form-btn" type="button" onclick="setupNewUser()"><h3>SIGN UP</h3></button>
         </form>
     </main>
     <footer>
